@@ -80,7 +80,7 @@
           <button>
             <a
               href="#"
-              class="bg-[#1F1F1F] px-[24px] py-[12px] font-[montserrat] text-[16px] leading-[150%] font-[700] text-white not-italic"
+              class="bg-[#1F1F1F] px-[24px] py-[14px] font-[montserrat] text-[16px] leading-[150%] font-[700] text-white not-italic"
               >Let's Talk</a
             >
           </button>
@@ -943,7 +943,7 @@
     <section>
       <div class="relative bg-[#FFD4D0]">
         <!-- circle Background -->
-        <div class="absolute left-[689px]">
+        <div class="absolute left-[689px] overflow-hidden">
           <svg
             width="122"
             height="62"
@@ -970,15 +970,24 @@
 
           <!-- Testemonials -->
           <div class="testimonials">
-            <div class="px-16">
-              <p
-                class="mx-auto w-[768px] py-[32px] text-center font-[montserrat] text-[16px] leading-[150%] font-[400] text-[#1F1F1F]/85 not-italic"
-              >
-                Sara Jones's designs are both visually captivating and highly
-                effective. She transformed our website, enhancing user
-                engagement and conversions. Her attention to detail and creative
-                approach are top-notch. Highly recommended!
-              </p>
+            <div>
+              <div class="flex items-center justify-between gap-[172px]">
+                <button class="h-[40px] w-[40px]">
+                  <img src="https://i.postimg.cc/D0W7Mh8y/arrow-left.png" />
+                </button>
+                <p
+                  class="mx-auto w-[768px] py-[32px] text-center font-[montserrat] text-[16px] leading-[150%] font-[400] text-[#1F1F1F]/85 not-italic"
+                >
+                  Sara Jones's designs are both visually captivating and highly
+                  effective. She transformed our website, enhancing user
+                  engagement and conversions. Her attention to detail and
+                  creative approach are top-notch. Highly recommended!
+                </p>
+                <button class="h-[40px] w-[40px]">
+                  <img src="https://i.postimg.cc/50QxP1H9/arrow-right.png" />
+                </button>
+              </div>
+
               <div class="flex items-center justify-center">
                 <img
                   src="https://i.postimg.cc/PJ0qMJfM/Image.png"
@@ -999,15 +1008,23 @@
               </div>
             </div>
 
-            <div class="px-16">
-              <p
-                class="mx-auto w-[768px] py-[32px] text-center font-[montserrat] text-[16px] leading-[150%] font-[400] text-[#1F1F1F]/85 not-italic"
-              >
-                Sara Jones's designs are both visually captivating and highly
-                effective. She transformed our website, enhancing user
-                engagement and conversions. Her attention to detail and creative
-                approach are top-notch. Highly recommended!
-              </p>
+            <!-- <div>
+              <div class="flex items-center justify-between gap-[172px]">
+                <button class="h-[40px] w-[40px]">
+                  <img src="https://i.postimg.cc/D0W7Mh8y/arrow-left.png" />
+                </button>
+                <p
+                  class="mx-auto w-[768px] py-[32px] text-center font-[montserrat] text-[16px] leading-[150%] font-[400] text-[#1F1F1F]/85 not-italic"
+                >
+                  Sara Jones's designs are both visually captivating and highly
+                  effective. She transformed our website, enhancing user
+                  engagement and conversions. Her attention to detail and
+                  creative approach are top-notch. Highly recommended!
+                </p>
+                <button class="h-[40px] w-[40px]">
+                  <img src="https://i.postimg.cc/50QxP1H9/arrow-right.png" />
+                </button>
+              </div>
               <div class="flex items-center justify-center">
                 <img
                   src="https://i.postimg.cc/PJ0qMJfM/Image.png"
@@ -1026,24 +1043,22 @@
                   </h4>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
 
       <!-- Testemonials Script -->
-      <script>
+      <!-- <script>
         $(document).ready(function () {
           $(".testimonials").slick({
             infinite: true,
             slidesToShow: 1,
             slidesToScroll: 1,
             arrows: true,
-            prevArrow:
-              '<button type="button" class="cursor-pointer absolute top-1/2 left-0  z-1"><svg width="16" height="31" viewBox="0 0 16 31" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.15 28.8665L3.28336 17.9998C2.00002 16.7165 2.00002 14.6165 3.28336 13.3332L14.15 2.46649" stroke="#1F1F1F" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
-            nextArrow:
-              '<button type="button" class="cursor-pointer absolute top-1/2 right-0 -translate-y-1/2"><svg width="16" height="31" viewBox="0 0 16 31" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.85001 28.8665L12.7167 17.9998C14 16.7165 14 14.6165 12.7167 13.3332L1.85001 2.46649" stroke="#1F1F1F" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
-            autoplay: true,
+            prevArrow: "",
+            nextArrow: "",
+            autoplay: false,
             autoplaySpeed: 2000,
             responsive: [
               {
@@ -1063,7 +1078,7 @@
             ],
           });
         });
-      </script>
+      </script> -->
     </section>
 
     <!-- Blog Section -->
@@ -1345,8 +1360,9 @@
     <footer>
       <div class="bg-[#1F1F1F] text-white">
         <div class="container mx-auto min-h-[349.45px] px-[300px] py-[80px]">
+          <!-- Text Container -->
           <div
-            class="mx-auto mb-[64px] grid min-h-[54px] max-w-[765px] grid-cols-3 items-center gap-[120px] text-center"
+            class="mx-auto mb-[64px] grid min-h-[54px] max-w-[780px] grid-cols-3 items-center gap-[120px] text-center"
           >
             <div class="link-left min-h-[30px] max-w-[185px]">
               <ul class="flex items-center gap-[32px]">
@@ -1391,6 +1407,7 @@
             </div>
           </div>
 
+          <!-- Text and Social Links -->
           <div class="text-center">
             <h6
               class="mb-[32px] font-[montserrat] text-[16px] leading-[150%] font-[400] not-italic"
